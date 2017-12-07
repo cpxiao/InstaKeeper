@@ -4,8 +4,8 @@ import android.util.Log;
 
 import com.cpxiao.AppConfig;
 import com.cpxiao.instakeeper.imps.LoadListener;
-import com.cpxiao.instakeeper.mode.DataBean;
-import com.cpxiao.instakeeper.mode.InstaDataBean;
+import com.cpxiao.instakeeper.mode.bean.DataBean;
+import com.cpxiao.instakeeper.mode.bean.InstaDataBean;
 import com.cpxiao.instakeeper.utils.OkHttpManager;
 import com.google.gson.Gson;
 
@@ -77,7 +77,7 @@ public class InstaDataHandle {
                             } catch (NullPointerException e) {
                                 // parse fail
                                 if (listener != null) {
-                                    listener.onParseFail(url, "instaDataBean != null, " + e.getMessage());
+                                    listener.onParseFail(url, "instaDataBean != null, " + e.getMessage()+"\n"+jsonString);
                                 }
                             }
                         }

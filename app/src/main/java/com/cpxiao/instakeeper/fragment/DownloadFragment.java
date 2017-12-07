@@ -21,7 +21,7 @@ import com.cpxiao.androidutils.library.utils.ThreadUtils;
 import com.cpxiao.instakeeper.InstaDataHandle;
 import com.cpxiao.instakeeper.R;
 import com.cpxiao.instakeeper.imps.LoadListener;
-import com.cpxiao.instakeeper.mode.DataBean;
+import com.cpxiao.instakeeper.mode.bean.DataBean;
 import com.cpxiao.instakeeper.utils.DownloadUtils;
 
 /**
@@ -88,7 +88,7 @@ public class DownloadFragment extends Fragment implements View.OnClickListener {
 
             mPictureUrl = ViewClick.getLastClipboardString(context);
             if (DEBUG) {
-//                mPictureUrl = "https://www.instagram.com/p/BbrxJMdF3oL/";//.jpg
+                //                mPictureUrl = "https://www.instagram.com/p/BbrxJMdF3oL/";//.jpg
                 //            mPictureUrl = "https://www.instagram.com/p/Bbso_2rgvPC/";//.mp4
             }
             if (!TextUtils.isEmpty(mPictureUrl)) {

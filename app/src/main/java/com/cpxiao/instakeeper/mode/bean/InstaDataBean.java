@@ -1,4 +1,4 @@
-package com.cpxiao.instakeeper.mode;
+package com.cpxiao.instakeeper.mode.bean;
 
 import java.util.List;
 

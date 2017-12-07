@@ -1,6 +1,6 @@
 package com.cpxiao.instakeeper.imps;
 
-import com.cpxiao.instakeeper.mode.DataBean;
+import com.cpxiao.instakeeper.mode.bean.DataBean;
 
 /**
  * @author cpxiao on 2017/12/01.

@@ -1,4 +1,4 @@
-package com.cpxiao.instakeeper.mode;
+package com.cpxiao.instakeeper.mode.bean;
 
 /**
  * @author cpxiao on 2017/12/01.
