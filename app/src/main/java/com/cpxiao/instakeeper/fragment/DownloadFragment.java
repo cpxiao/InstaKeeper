@@ -37,6 +37,7 @@ public class DownloadFragment extends Fragment implements View.OnClickListener {
     private ImageView mImageView;
     private EditText mUrlEditText;
     private TextView mMsgTextView;
+    private TextView mUrlTextView;
 
     public static DownloadFragment newInstance() {
         Bundle args = new Bundle();
@@ -56,6 +57,7 @@ public class DownloadFragment extends Fragment implements View.OnClickListener {
         mImageView = (ImageView) view.findViewById(R.id.image_view);
         mUrlEditText = (EditText) view.findViewById(R.id.url_edit_text);
         mMsgTextView = (TextView) view.findViewById(R.id.msg_text_view);
+        mUrlTextView = (TextView) view.findViewById(R.id.url_text_view);
         Button pasteBtn = (Button) view.findViewById(R.id.paste_btn);
         Button downloadBtn = (Button) view.findViewById(R.id.download_btn);
         pasteBtn.setOnClickListener(this);
@@ -85,16 +87,10 @@ public class DownloadFragment extends Fragment implements View.OnClickListener {
         Context context = getActivity();
         int id = v.getId();
         if (id == R.id.paste_btn) {
-
             mPictureUrl = ViewClick.getLastClipboardString(context);
-            if (DEBUG) {
-                //                mPictureUrl = "https://www.instagram.com/p/BbrxJMdF3oL/";//.jpg
-                //            mPictureUrl = "https://www.instagram.com/p/Bbso_2rgvPC/";//.mp4
-            }
             if (!TextUtils.isEmpty(mPictureUrl)) {
                 mUrlEditText.setText(mPictureUrl);
             }
-
         } else if (id == R.id.download_btn) {
             if (!TextUtils.isEmpty(mPictureUrl)) {
 
